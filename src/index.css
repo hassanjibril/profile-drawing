@@ -1,0 +1,94 @@
+body {
+    background-color: #3e4656 !important;
+    user-select: none;
+}
+
+.canvasContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#drawingCanvas {
+    border:1px solid red;
+    background-color: grey;
+    margin-top: 10px;
+    /* background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -1px -1px, -1px -1px, 0 0px, 0 0;
+    background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px), linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px); */
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+  
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} */
+
+.point-cell {
+    width: 50px;
+}
+
+.clear {
+    background-color: pink !important;
+    color: red !important;
+    margin-right: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+.fit-btn {
+    margin-bottom: 5px !important;
+    margin-right: 10px !important;
+}
+
+.delete {
+    margin-bottom: 5px !important;
+    color: white !important;
+    background-color: red !important;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 160px;
+    height: 40px;
+}
+
+.status {
+    width: 30%;
+    flex-direction: row !important;
+    float: left;
+}
+
+.checkboxContainer {
+    float: left;
+}
+
+.zoom-icon {
+    color: blue;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media (max-width: 600px) {
+    .zoom-icon {
+        visibility: unset;
+        font-size: 30px !important;
+        margin-top: 8px;
+        margin-left: 20px;
+        float: right;
+    }
+}
